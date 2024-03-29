@@ -1,0 +1,21 @@
+.todo-form {
+  display:flex;
+  margin:10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.todo-form span {
+  display: flex;
+  align-items: center;
+}
+
+.todo-form div {
+  display: flex;
+}
+
+.todo-form button {
+  margin: 10px 5px;
+}
+
+

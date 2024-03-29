@@ -1,0 +1,13 @@
+<div class="panel" [ngClass]="{'visible': isPanelVisible}">
+  <div class="rout">
+    <a class='home' routerLink="/home"><img class="proImg" src="../../../../../assets/home.png" alt=""></a>
+    <button class="btn-panel" (click)="togglePanel()"> {{ isPanelVisible ? '<' : '>' }}</button>
+  </div>
+  <div class="projects">
+    <a routerLinkActive="active-link" routerLink="/clock"><img class="projectImg" src="../../../../../assets/time.png" alt=""></a>
+    <a routerLinkActive="active-link" routerLink="/todo-list"> <img class="projectImg" src="../../../../../assets/todo-list.png" alt=""></a>
+    <a routerLinkActive="active-link" routerLink="/calculator"><img class="projectImg" src="../../../../../assets/calculator.png" alt=""></a>
+    <a routerLinkActive="active-link" routerLink="/movies"><img class="projectImg" src="../../../../../assets/movies.png" alt=""></a>
+    <a routerLinkActive="active-link" routerLink="/game"><img class="projectImg" src="../../../../../assets/game.png" alt=""></a>
+  </div>
+</div>

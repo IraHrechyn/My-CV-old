@@ -1,0 +1,354 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 520px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 42px 0 20px 50px;
+}
+
+.myName{
+  font-family: "Tanmon Cherry", serif;
+  width: 100%;
+  font-size:73px;
+  flex-wrap: wrap;
+  color:#6D493B;
+}
+
+.description{
+  color:#6D493B;
+  left:30px;
+  font-family: 'Times New Roman', serif;
+  font-size: 28.5px;
+}
+
+.photo {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.back_of_photo {
+  position: relative;
+}
+
+.rectangle {
+  height: 250px;
+  width: 57%;
+  position: absolute;
+  left: 170px;
+  background: #C19B87;
+}
+
+.myImg {
+  background: black;
+  position: absolute;
+  border-radius: 50%;
+  height: 418px;
+  width: 59%;
+  left: 163px;
+  top: 60px;
+}
+
+.back {
+  width: 100%;
+}
+
+.column{
+  display:flex;
+  flex-direction: column;
+}
+
+.icons{
+  padding-left:30px;
+  padding-bottom: 0;
+  height: 32px;
+  margin-top:20px;
+}
+
+.icon2{
+  height: 31px;
+  width: auto;
+  margin: 2px 5px;
+}
+
+.connecting{
+  display:flex;
+  flex-direction: column;
+  margin: 19px 0 0 9px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  font-size: 16.6px;
+  text-decoration:none;
+  color:#6D493B;
+}
+
+a:visited{
+  color:#6D493B;
+}
+
+@font-face {
+  font-family: "Tanmon Cherry";
+  src: url('/assets/TAN-MONCHERI.woff');
+}
+
+@media (max-width: 986px) {
+  .container {
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .photo{
+    order: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .rectangle{
+    left: 165px;
+    width: 47%;
+  }
+
+  .title {
+    order: 1;
+  }
+
+  .column {
+    order: 2;
+  }
+
+  .back {
+    content: url('/assets/back11.png');
+    width: 600px;
+  }
+
+  .myImg{
+    height: 380px;
+    width: 50%;
+    left: 155px;
+  }
+
+  .title {
+   padding: 37px 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .myName {
+    flex-wrap: nowrap;
+    width: 100%;
+    font-size: 58px;
+    text-align: center;
+  }
+
+  .connecting{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 19px 10px 0 10px;
+  }
+
+  .column{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .line {
+    margin: 0 43px;
+  }
+
+  .connecting div:nth-of-type(3) a{
+    margin: 0 84px 0 40px;
+  }
+}
+
+@media (max-width: 621px) {
+  .back{
+    width: 570px;
+  }
+
+  .myImg{
+    width: 46%;
+  }
+
+  .rectangle{
+    width: 43%;
+  }
+
+  .myName{
+    font-size:52px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 591px) {
+  .back{
+    width: 540px;
+  }
+
+  .myImg{
+    width: 44%;
+    height: 350px;
+  }
+
+  .rectangle{
+    width: 41%;
+  }
+
+  .myName{
+    font-size:50px;
+  }
+}
+
+@media (max-width: 569px) {
+  .back{
+    width: 510px;
+  }
+
+  .myImg{
+    width: 42%;
+    height: 310px;
+  }
+
+  .rectangle{
+    width: 39%;
+  }
+
+  .myName{
+    font-size:48px;
+  }
+}
+
+@media (max-width: 536px) {
+  .back{
+    width: 480px;
+  }
+
+  .myImg{
+    width: 41%;
+    height: 285px;
+  }
+
+  .rectangle{
+    width: 37%;
+  }
+
+  .myName{
+    font-size:46px;
+  }
+}
+
+@media (max-width: 510px) {
+  .back{
+    width: 450px;
+  }
+
+  .rectangle{
+    left: 150px;
+  }
+
+  .myImg{
+    left: 143px;
+  }
+
+  .myName{
+    font-size:42px;
+  }
+}
+
+@media (max-width: 475px) {
+  .rectangle{
+    left: 139px;
+  }
+
+  .myImg{
+    left: 131px;
+    height: 260px;
+  }
+
+  .back{
+    width: 420px;
+  }
+
+  .myName{
+    font-size:40px;
+  }
+}
+
+@media (max-width: 452px) {
+  .back{
+    width: 390px;
+  }
+
+  .rectangle{
+    left: 125px;
+    height: 170px;
+  }
+
+  .myImg{
+    left: 114px;
+    height: 240px;
+    width: 43%;
+  }
+
+  .myName{
+    font-size:36px;
+  }
+}
+@media (max-width: 417px) {
+  .back{
+    width: 350px;
+  }
+
+  .rectangle{
+    left: 120px;
+    height: 165px;
+  }
+
+  .myImg{
+    left: 109px;
+    height: 225px;
+    width: 43%;
+  }
+
+  .myName{
+    font-size:32px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 374px) {
+  .back{
+    width: 320px;
+  }
+
+  .rectangle{
+    left: 106px;
+    height: 150px;
+  }
+
+  .myImg{
+    left: 96px;
+    height: 207px;
+    width: 43%;
+  }
+  .myName{
+    font-size:30px;
+    margin-top: 20px;
+  }
+}

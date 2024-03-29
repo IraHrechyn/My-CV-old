@@ -1,0 +1,12 @@
+<header class="header">
+  <img alt="Logo" class="logo" src="/assets/logo.jpg" />
+  <div class="name">KINOUKR.com</div>
+  <div class="search-container">
+    <input class="search searchByYear" [(ngModel)]="year" placeholder="Пошук за роком..." type="text" />
+    <input class="search searchByName" [(ngModel)]="name" placeholder="Пошук за назвою..." type="text" />
+
+    <div class="find" (click)="onSearch()">
+      <img height="30px" src="/assets/find.png" alt="" width="30px" />
+    </div>
+  </div>
+</header>

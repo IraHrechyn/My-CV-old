@@ -1,0 +1,36 @@
+.container{
+  display:flex;
+  flex-direction:column;
+  margin:10px;
+
+}
+
+.title {
+  display: flex;
+  position:relative;
+  align-items: center;
+  margin: 0 0 40px 0;
+}
+
+.textOfTitle{
+  position:absolute;
+  z-index: 1;
+  left:20px;
+  font-family: 'Times New Roman', serif;
+  color:#6D493B;
+  font-weight: bold;
+  font-size: 18.5px;
+}
+.bg_title {
+  width: 150px;
+  height: auto;
+  position:absolute;
+}
+
+.text{
+  padding: 10px;
+  font-family: 'Times New Roman', serif;
+  color:#6D493B;
+  text-align: justify;
+  font-size: 20px;
+}

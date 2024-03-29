@@ -1,0 +1,79 @@
+.panel {
+  position: fixed;
+  left: -72px;
+  top: 60px;
+  height: 310px;
+  width: 100px;
+  color: #fff;
+  transition: left 0.3s ease;
+  background-image: url('../../../../../assets/bar.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+z-index:1;
+}
+.active-link{
+  background: #faefd4;
+}
+
+.panel.visible {
+  left: 0;
+}
+
+.btn-panel {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-left:25px;
+  cursor: pointer;
+  padding-right: 0;
+  border:none;
+  background:#edd7a7;
+  justify-content: flex-end;
+  margin-top:25px;
+}
+.rout{
+  display:flex;
+  width: 25px;
+  height: 90px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left:40px;
+  margin-top:-23px;
+}
+
+.proImg{
+  height: 20px;
+  width: 20px;
+  margin-top:9px;
+}
+
+a {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  padding-top:10px;
+}
+
+.projectImg{
+  height: 30px;
+  width: 20px;
+  padding-bottom:10px;
+
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  margin: -9px 29px 10px 29px;
+}
+
+.projectImg:active {
+  filter: brightness(1.2);
+}
+
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

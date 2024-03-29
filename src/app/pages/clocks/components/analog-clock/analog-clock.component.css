@@ -1,0 +1,62 @@
+/* Спільні стилі для всіх годинників */
+.clock {
+  width: 50%;
+  padding: 0 0 50% 0;
+  position: relative;
+  margin: 0 auto;
+  background-size: cover;
+  border-radius: 50%;
+  background-image: url('/assets/clock.png');
+  background-position: center;
+  box-shadow: 10px 10px 20px rgba(0.25, 0.25, 0.25, 0.25);
+}
+
+/* Стилі для годинної стрілки */
+.hour-hand {
+  background-color: #6d493b;
+  position: absolute;
+  transform-origin: bottom center;
+  left: 50%;
+  width: 1%;
+  height: 17%;
+  bottom: 50%;
+  margin-left: -3px;
+}
+
+/* Стилі для хвилинної стрілки */
+.minute-hand {
+  background-color: #6d493b;
+  position: absolute;
+  transform-origin: bottom center;
+  left: 50%;
+  width: 0.8%;
+  height: 23%;
+  bottom: 50%;
+  margin-left: -2px;
+}
+
+/* Стилі для секундної стрілки */
+.second-hand {
+  background-color: #6d493b;
+  position: absolute;
+  transform-origin: bottom center;
+  left: 50%;
+  width: 0.5%;
+  height: 29%;
+  bottom: 50%;
+  margin-left: -1px;
+}
+
+/* Стилі для центру годинника */
+.clock-center {
+  width: 3%;
+  height: 3%;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+

@@ -1,0 +1,5 @@
+<div class="pagination" *ngIf="state.pagination.totalPages > 1">
+  <span *ngIf="state.pagination.pageCurrent > 1" (click)="onPageClick(-1)">❮</span>
+  <span *ngFor="let page of getPageNumbers()" [class.active]="page === state.pagination.pageCurrent" (click)="onPageClick(page)">{{ page }}</span>
+  <span *ngIf="state.pagination.totalPages > 5 && state.pagination.pageCurrent !== state.pagination.totalPages" (click)="onPageClick(-2)">❯</span>
+</div>

@@ -1,0 +1,19 @@
+.edit-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-fields input {
+  margin-bottom: 7px;
+}
+
+.empty-message {
+  text-align: center;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  background: 	#98FB98;
+  opacity: 0.8;
+}
+

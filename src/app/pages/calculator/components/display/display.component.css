@@ -1,0 +1,19 @@
+.screen {
+  height: 125px;
+  padding: 10px;
+  width: 245px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  margin:7px 7px 20px 7px;
+  border:3px 	#000000 solid;
+  border-radius: 15px;
+  background: 	#000000;
+}
+
+.screen p {
+  text-align: right;
+  font-size: 4rem;
+  margin: 0;
+  color:white;
+}

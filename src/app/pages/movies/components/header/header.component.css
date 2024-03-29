@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  padding: 25px 10px 10px;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 16px ;
+  width: 50px;
+  height: 50px;
+}
+
+.name {
+  font-size: 35px;
+  color: #4f4f4f;
+}
+
+.search-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #cccccc;
+}
+
+.searchByYear {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #cccccc;
+  padding: 3px;
+  border-radius:10px;
+}
+
+.searchByName {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #cccccc;
+  padding: 3px;
+  border-radius:10px;
+}
+
+.search {
+  width: 200px;
+  height: 30px;
+  border: none;
+  margin: 3px;
+  border-bottom: 1px solid #ccc;
+  background-color: #4f4f4f;
+  outline: none;
+  font-family: inherit;
+}
+
+.find {
+  background-color: #4f4f4f;
+  display: flex;
+  border-radius:10px;
+}
+
+.find:hover {
+  background: rgb(241, 169, 69);
+}

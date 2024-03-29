@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  display:flex;
+  flex-direction:column;
+  margin: 55px 10px;
+}
+
+.title {
+  display: flex;
+  position:relative;
+  align-items: center;
+}
+
+.textOfTitle{
+  position:absolute;
+  z-index: 1;
+  left:20px;
+  font-family: 'Times New Roman', serif;
+  color:#6D493B;
+  font-weight: bold;
+  font-size: 18.5px;
+}
+.bg_title {
+  width: 190px;
+  height: auto;
+  position:absolute;
+}
+
+.text{
+  display:flex;
+  margin-top:60px;
+  font-family: 'Times New Roman', serif;
+  color:#6D493B;
+  font-size: 20px;
+  list-style: none;
+  flex-direction: column;
+}
+
+li{
+  font-weight: bold;
+  text-align:center;
+  justify-content: center;
+}
+
+.lineOfProject{
+  display:flex;
+  margin: 10px;
+}
+
+.projectImg{
+  height: 30px;
+  width: 30px;
+}
+
+li a {
+  text-decoration: none;
+  padding-left: 15px;
+  color:#6D493B;
+}
+
+.description{
+  padding:5px;
+  margin-left: 40px;
+}

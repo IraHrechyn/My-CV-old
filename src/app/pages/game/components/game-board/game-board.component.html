@@ -1,0 +1,17 @@
+<div class="container">
+  <app-header-game></app-header-game>
+
+  <div *ngIf="m.isPaused && !m.gameOver" class="pause-overlay">
+    <h1>PAUSED</h1>
+    <p>Press Space to resume</p>
+  </div>
+
+  <div *ngIf="m.gameOver" class="game-over"><h1>Game Over</h1></div>
+
+  <div class="game-board" [ngClass]="{'blur': m.isPaused || m.gameOver}"></div>
+  <app-mobile-controls></app-mobile-controls>
+
+</div>
+<app-start-modal *ngIf="m.modalVisible"></app-start-modal>
+
+

@@ -1,0 +1,6 @@
+<div class="clock">
+  <div class="hour-hand" [style.transform]="'rotate(' + dateService.currentTime.hours * 30 + 'deg)'"></div>
+  <div class="minute-hand" [style.transform]="'rotate(' + dateService.currentTime.minutes * 6 + 'deg)'"></div>
+  <div class="second-hand" [style.transform]="'rotate(' + dateService.currentTime.seconds * 6 + 'deg)'"></div>
+  <div class="clock-center"></div>
+</div>

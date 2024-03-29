@@ -1,0 +1,53 @@
+.film-carousel {
+  height: 65%;
+  width: 95%;
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  cursor: pointer;
+  margin: 40px 0 30px 2.5%;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  gap: 11px;
+  height: 100%;
+}
+
+.movie-item {
+  position: relative;
+  height: 100%;
+}
+
+.film-title {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  font-size: 10px;
+  transition: opacity 0.3s ease-in-out;
+  box-shadow: 4px 4px 14px rgb(241, 169, 69);
+}
+
+.movie-item:hover .film-title {
+  opacity: 1;
+}
+
+.film-image {
+  height: 80%;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+

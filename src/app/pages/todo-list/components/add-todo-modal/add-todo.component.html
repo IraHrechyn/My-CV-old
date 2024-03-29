@@ -1,0 +1,62 @@
+<p-dialog
+  [(visible)]="todoService.m.showModal"
+  [modal]="true"
+  [style]="{ width: '450px', height: '480px' }"
+  header="Todo Details">
+
+  <input class="card-title w-100" pInputText [(ngModel)]="todoService.m.newTodo!.title" placeholder="New case" />
+  <p>Add a description to the case:</p>
+  <textarea pInputTextarea
+            [(ngModel)]="todoService.m.newTodo!.description"
+            name="editedDescription"
+            placeholder="Description..."
+            class="w-100"
+            [ngModelOptions]="{standalone: true}"
+            style="margin-top:3px; margin-bottom:3px; white-space: pre-wrap"
+            cols="40" rows="3"
+            [autoResize]="true"
+  ></textarea>
+
+  <p-dropdown
+    class="w-100" [styleClass]="'w-100'"
+    [(ngModel)]="todoService.m.newTodo!.status"
+    [options]="todoService.m.statusOption"
+    [style]="{'margin-top':'5px'}"
+    appendTo="body">
+
+    <ng-template pTemplate="selectedItem">
+      <p-tag
+        [severity]="todoService.getSeverity(todoService.m.newTodo!.status)"
+        [value]="todoService.m.newTodo!.status"
+      ></p-tag>
+    </ng-template>
+
+    <ng-template let-option pTemplate="item">
+      <p-tag
+        [severity]="todoService.getSeverity(option.value)"
+        [value]="option.value"
+      ></p-tag>
+    </ng-template>
+  </p-dropdown>
+
+  <ng-template pTemplate="footer">
+    <button
+      (click)="cancel()"
+      class="p-button-text"
+      icon="pi pi-times"
+      label="Cancel"
+      pButton
+      pRipple
+    ></button>
+    <button *ngIf="todoService.m.newTodo!.title.trim()"
+      (click)="save()"
+      class="p-button-text"
+      icon="pi pi-check"
+      label="Save"
+      pButton
+      pRipple
+    ></button>
+  </ng-template>
+</p-dialog>
+
+<p-confirmDialog [style]="{ width: '450px' }"></p-confirmDialog>

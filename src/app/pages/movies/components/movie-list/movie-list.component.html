@@ -1,0 +1,4 @@
+<div class="moviesContainer">
+  <app-film-card *ngFor="let movie of state.movieData" [movie]="movie" (filmClicked)="onFilmClick($event)" class="film-card"></app-film-card>
+  <p class="noResult" *ngIf="state.movieData.length === 0">Your search for nothing was found.</p>
+</div>

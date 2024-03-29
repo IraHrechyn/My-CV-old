@@ -1,0 +1,31 @@
+<div class="todo-form">
+    <span class="p-input-icon-left">
+
+
+          <input [(ngModel)]="todoService.m.searchValue" pInputText placeholder="Search..." type="text" (input)="todoService.m.filterData()" />
+    <i class="pi pi-search search"></i>
+    </span>
+
+    <div class="button-group">
+          <button
+            (click)="todoService.assignTodoForCreation()"
+            class="p-button-success mr-2"
+            icon="pi pi-plus" style="margin-right:3px"
+            label="New"
+            pButton
+            pRipple
+          ></button>
+          <button
+            (click)="todoService.deleteSelectedTodos()"
+            [disabled]="!todoService.m.selectedTodos.length"
+            [label]="'Delete'"
+            class="p-button-danger"
+            icon="pi pi-trash"
+            pButton
+            pRipple
+          ></button>
+    </div>
+</div>
+
+<p-confirmPopup></p-confirmPopup>
+<app-add-todo-modal *ngIf="todoService.m.newTodo"></app-add-todo-modal>

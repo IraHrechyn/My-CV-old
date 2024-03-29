@@ -1,0 +1,14 @@
+<div class="film-carousel" #filmCarousel>
+  <div class="prev-arrow" (click)="scrollToPrevious()">◀</div>
+  <div class="carousel-content" #carouselContent>
+    <div *ngFor="let movie of carouselMovies" class="movie-item" (click)="openYouTubeLink(movie.title)">
+      <img
+        class="film-image"
+        [src]="'http://image.tmdb.org/t/p/original' + movie.posterPath"
+        [alt]="movie.title"
+      />
+      <p class="film-title">{{ movie.title }}</p>
+    </div>
+  </div>
+  <div class="next-arrow" (click)="scrollToNext()">▶</div>
+</div>

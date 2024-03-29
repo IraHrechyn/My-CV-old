@@ -1,0 +1,16 @@
+<div class="calculator-container">
+  <app-app-navbar></app-app-navbar>
+  <div class="calc">
+    <app-display></app-display>
+    <div class="button">
+      <ng-container *ngFor="let button of state.buttons.correctOrder" class="button">
+        <app-button-action *ngIf="button | buttonOfType: ButtonTypeEnum.action" [label]="button"
+                           class="btn bg-grey"></app-button-action>
+        <app-button-numeric *ngIf="button | buttonOfType: ButtonTypeEnum.numeric" [class.zero]="button === '0'" [label]="button"
+                            class="btn"></app-button-numeric>
+        <app-button-operation *ngIf="button | buttonOfType: ButtonTypeEnum.operation" [label]="button"
+                              class="btn bg-orange "></app-button-operation>
+      </ng-container>
+    </div>
+  </div>
+</div>

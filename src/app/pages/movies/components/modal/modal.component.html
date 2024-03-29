@@ -1,0 +1,27 @@
+<div class="modal">
+  <div class="modal-content">
+    <span class="line"></span>
+    <span class="close-button" (click)="closeModal()">&times;</span>
+    <img alt="" class="modal-image" [src]="'http://image.tmdb.org/t/p/original' + state.selectedMovie?.posterPath">
+    <div class="modal-details">
+      <h2 class="modal-title">{{ state.selectedMovie?.title }}</h2>
+      <div class="star-rating">
+        <ng-container *ngFor="let star of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+          <span class="star" [class.active]="star <= Math.round(state.selectedMovie!.voteAverage || 0)">
+            <ng-container *ngIf="star <= Math.floor(state.selectedMovie!.voteAverage || 0)">
+              <img class="stars" src="../../../../../assets/star.png" alt="Gold Star" />
+            </ng-container>
+            <ng-container *ngIf="star > Math.floor(state.selectedMovie!.voteAverage || 0)">
+              <img class="stars" src="../../../../../assets/starNon.png" alt="Black Star" />
+            </ng-container>
+          </span>
+        </ng-container>
+      </div>
+      <div class="description">
+        <p class="modal-year">{{ state.selectedMovie? state.selectedMovie.releaseDate.slice(0, 4):''}}</p>
+        <p class="modal-description">{{ state.selectedMovie?.overview }}</p>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>

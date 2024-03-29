@@ -1,0 +1,17 @@
+<div class="movies-page">
+  <app-app-navbar></app-app-navbar>
+
+  <div class="main-container">
+    <div class="bg">
+      <app-header-movie></app-header-movie>
+      <app-carousel></app-carousel>
+    </div>
+
+    <movie-list></movie-list>
+    <app-pagination></app-pagination>
+    <app-modal *ngIf="state.modal"></app-modal>
+  </div>
+
+  <p-scrollTop></p-scrollTop>
+</div>
+

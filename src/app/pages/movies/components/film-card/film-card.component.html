@@ -1,0 +1,9 @@
+<div class="film-card" (click)="onFilmClick()">
+    <img alt="" [src]="'http://image.tmdb.org/t/p/original' + movie.posterPath">
+    <div class="film-data">
+      <p class="film-data_rating">{{ movie.voteAverage }}</p>
+      <p class="film-data_people">({{ movie.voteCount }})</p>
+      <p class="film-data_name">{{ movie.title }}</p>
+    </div>
+    <div class="film-overlay" [id]="movie.id"></div>
+  </div>

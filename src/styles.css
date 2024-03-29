@@ -1,0 +1,51 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+
+.snake {
+  background-color: transparent;
+  background-image: url("/assets/body_of_snake.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.head {
+  background-color: transparent;
+  background-image: url("/assets/head_of_snakee.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.food {
+  background-color: transparent;
+  background-image: url("/assets/food.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+
+}
+
+.obstacle {
+  background-color: transparent;
+  background-image: url("/assets/obstacle1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+body{
+  background-color: #FCF9F2;
+  margin: 0;
+}
+

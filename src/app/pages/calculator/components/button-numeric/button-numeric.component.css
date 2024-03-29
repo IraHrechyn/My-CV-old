@@ -1,0 +1,5 @@
+.zero {
+  width: calc(50% - 6px);
+  border-radius: 34px;
+}
+

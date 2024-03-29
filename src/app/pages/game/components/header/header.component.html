@@ -1,0 +1,40 @@
+<div class="score-card">
+  <div class="score-board">
+    <div class="button-row">
+    <div class="instruction-button size" (mouseenter)="showInstructions = true" (mouseleave)="showInstructions = false">?</div>
+    <div class="score-board sound sound-on"  (click)="sound()"></div>
+    </div>
+    <div class="instruction-window" [class.show]="showInstructions">
+      <p>To control the snake, use the arrow keys or "W", "A", "S", "D" keys.</p>
+      <p>To pause the game, press the "Space" key.</p>
+      <p>To restart the game, press the "R" key.</p>
+      <p>Starting from level 2, the boundaries of the field will open up.</p>
+      <p>Starting from level 10, you can bite off a part of the snake, but your score will decrease.</p>
+      <p>Obstacles will appear from level 10 onwards, so be attentive!</p>
+    </div>
+  </div>
+
+  <div class="score-board">
+    <h1>Best Score</h1>
+    <h3>{{m.bestScore}} | {{m.bestTime}}</h3>
+  </div>
+
+  <div class="score-board">
+    <h1>Score</h1>
+    <h3>{{m.score}}</h3>
+  </div>
+
+  <div class="score-board">
+    <h1>Level</h1>
+    <h3>{{m.level}}</h3>
+  </div>
+
+  <div class="score-board">
+    <h1>Time</h1>
+    <h3>{{m.timeOut}}</h3>
+  </div>
+
+  <div class="score-board">
+    <div (click)="m.restart()" class="restart-button size">RESTART</div>
+  </div>
+</div>
